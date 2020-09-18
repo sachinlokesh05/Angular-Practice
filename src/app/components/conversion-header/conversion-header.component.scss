@@ -1,0 +1,30 @@
+
+
+$font-stack: 'Montserrat', sans-serif;
+$primary-background-color: #446DFF;
+
+@mixin header-font-design () {
+  font-family: $font-stack;
+  font-size:30px;
+  text-transform: capitalize;
+  font-weight: normal normal normal;
+  font-size: 25/30px;
+  opacity: 1;
+}
+
+
+@mixin toolbar () {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index:2;
+  background: $primary-background-color 0% 0% no-repeat padding-box;  color: #FFFFFF;
+  height: 75px;
+} 
+.mat-toolbar{
+  @include toolbar()
+}
+
+.font-design{
+  @include header-font-design()
+}

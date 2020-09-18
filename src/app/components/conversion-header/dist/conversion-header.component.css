@@ -1,0 +1,18 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: #446DFF 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  height: 75px;
+}
+
+.font-design {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: normal normal normal;
+  font-size: 25/30px;
+  opacity: 1;
+}
