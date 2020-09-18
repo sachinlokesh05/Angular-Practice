@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from "./material/material.module";
+import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './components/home/home.component';
 import { ChooseTypeComponent } from './components/choose-type/choose-type.component';
 import { ConversionPartComponent } from './components/conversion-part/conversion-part.component';

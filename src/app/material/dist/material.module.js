@@ -9,6 +9,8 @@ exports.__esModule = true;
 exports.MaterialModule = void 0;
 var core_1 = require("@angular/core");
 var button_1 = require("@angular/material/button");
+var toolbar_1 = require("@angular/material/toolbar");
+var card_1 = require("@angular/material/card");
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
@@ -16,9 +18,15 @@ var MaterialModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [],
             imports: [
-                button_1.MatButtonModule
+                button_1.MatButtonModule,
+                toolbar_1.MatToolbarModule,
+                card_1.MatCardModule
             ],
-            exports: [button_1.MatButtonModule]
+            exports: [
+                button_1.MatButtonModule,
+                toolbar_1.MatToolbarModule,
+                card_1.MatCardModule
+            ]
         })
     ], MaterialModule);
     return MaterialModule;
