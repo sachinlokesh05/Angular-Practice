@@ -7,6 +7,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './components/header/header.component';
 import { ChooseTypeComponent } from './components/choose-type/choose-type.component';
 import { ConversionTableComponent } from './components/conversion-table/conversion-table.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { ConversionTableComponent } from './components/conversion-table/conversi
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
