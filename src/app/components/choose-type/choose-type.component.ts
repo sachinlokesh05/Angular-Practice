@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChooseTypeComponent implements OnInit {
 
-  constructor() { }
+  public x = false;
+  public y = false;
+  constructor() {
+   }
+
+
 
   ngOnInit(): void {
   }
