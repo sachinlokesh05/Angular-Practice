@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ConversionTableComponent } from './components/conversion-table/conversion-table.component';
-import { FormControl } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,19 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Quantity-measurements';
+  oppoSuits: any = ['Men', 'Women', 'Boys', 'Inspiration']
+  constructor(public fb: FormBuilder) { }
+
+  oppoSuitsForm = this.fb.group({
+    name: ['']
+  });
+
+  onSubmit(): void {
+    console.log(this.oppoSuitsForm.value());
+  }
+  changeSuit(e): void {
+    this.oppoSuitsForm.get('name').setValue(e.target.value, {
+       onlySelf: true
+    });
+  }
 }

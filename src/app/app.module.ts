@@ -13,6 +13,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
     HeaderComponent,
     ChooseTypeComponent,
     ConversionTableComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
