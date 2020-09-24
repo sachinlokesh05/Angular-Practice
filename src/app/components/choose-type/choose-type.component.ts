@@ -14,17 +14,18 @@ export class ChooseTypeComponent implements OnInit {
    }
 
   selectedlength(): void{
-    if ( this.x !== true) {
+    if ( ! this.x ) {
       this.x = true;
       this.y = false;
       this.z = false;
     }else{
       this.x = false;
     }
+
   }
 
   selectedtemp(): void{
-    if ( this.y !== true) {
+    if ( ! this.y) {
       this.y = true;
       this.x = false;
       this.z = false;
@@ -34,7 +35,7 @@ export class ChooseTypeComponent implements OnInit {
   }
 
   selectedvolumne(): void{
-    if ( this.z !== true) {
+    if ( ! this.z) {
       this.z = true;
       this.y = false;
       this.x = false;
