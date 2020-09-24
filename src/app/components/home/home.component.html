@@ -1,0 +1,17 @@
+<mat-toolbar fxLayout="row" fxLayout.xs="column" [ngStyle.xs]="{'font-size':'17px'}"
+  fxLayoutAlign="space-around center"
+  >
+  <div class="header-name"  style="font-size: 28px;">
+    Quanment
+  </div>
+  <div class="history" style="font-size: medium;" >
+    History
+  </div>
+</mat-toolbar>
+
+<app-header></app-header>
+
+<div class="conversion-container"  >
+  <div  > <app-choose-type></app-choose-type></div>
+  <div><app-conversion-table></app-conversion-table></div>
+</div>
