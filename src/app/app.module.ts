@@ -14,7 +14,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './components/home/home.component';
-
+import { ConversionSelectionService } from './serviecs/conversion-selection.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { HomeComponent } from './components/home/home.component';
     MatFormFieldModule,
     MatInputModule,
   ],
-  providers: [],
+  providers: [ConversionSelectionService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
