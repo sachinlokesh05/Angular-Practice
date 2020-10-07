@@ -1,25 +1,25 @@
-<div fxLayoutAlign="row" fxLayoutAlign="center space-between" [ngStyle]="{'padding':'80px'}" [ngStyle.xs]="{'padding':'10px'}" >
-  <div class="main"  >
-    <div class="container" fxLayout="column" fxLayoutGap="1em"  fxFlexAlign.xs="center center" >
+<div fxLayoutAlign="row" fxLayoutAlign="center space-between"
+  >
+  <!-- [ngStyle]="{'padding':'80px'}" [ngStyle.xs]="{'padding':'10px'}" -->
+  <div class="main" >
+    <div class="container" fxLayout="column" fxLayoutGap="1em" fxFlexAlign.xs="center center">
       <div class="headline" [ngStyle.xs]="{'font-size':'12px'}" style="font-size: 16px;font-weight: bold;">
         CHOOSE TYPE
       </div>
-      <div class="choose-box" fxLayout.xs="column" fxLayout="row" fxLayout.xs="column wrap"fxLayoutGap="20px"
-        >
-        <div class="car car-length" [ngClass]="{'car-length-selected': x}"
-            (click)="selectedlength()"
-            fxLayout="column"
-            fxLayoutAlign="center center"
-            fxFlex="45">
+      <div class="choose-box" fxLayout.xs="column" fxLayout="row" fxLayout.xs="column wrap" fxLayoutGap="20px">
+        <div class="car car-length" [ngClass]="{'car-length-selected': x}" (click)="selectedlength()" fxLayout="column"
+          fxLayoutAlign="center center" fxFlex="45">
           <img src="../../../assets/images/scale(1).svg" alt="">
           <span fxFlexOffset="14px" class="text">Length</span>
           <span></span>
         </div>
-        <div class="car car-temp" [ngClass]="{'car-temp-selected': y}" (click)="selectedtemp()"  fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="45" fxFlex="45">
+        <div class="car car-temp" [ngClass]="{'car-temp-selected': y}" (click)="selectedtemp()" fxLayout="column"
+          fxLayoutAlign="center center" fxFlex.xs="45" fxFlex="45">
           <img src="../../../assets/images/hot (1).svg" alt="">
           <span fxFlexOffset="14px" class="text">Temperature</span>
         </div>
-        <div class="car car-volume" [ngClass]="{'car-volume-selected': z}" (click)="selectedvolumne()"  fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="45" fxFlex="45">
+        <div class="car car-volume" [ngClass]="{'car-volume-selected': z}" (click)="selectedvolumne()" fxLayout="column"
+          fxLayoutAlign="center center" fxFlex.xs="45" fxFlex="45">
           <img src="../../../assets/images/beaker (1).svg" alt="">
           <span fxFlexOffset="14px" fxFlexOffset.xs="0" class="text">Volumne</span>
         </div>

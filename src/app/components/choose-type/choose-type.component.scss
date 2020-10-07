@@ -9,10 +9,12 @@
 
 .main{
   width: 40%;
+  flex-wrap: wrap;
 }
 
 .container{
-  padding: 3em;
+  padding-top: 5em;
+  padding-bottom: 5em;;
 }
 
 .headline {

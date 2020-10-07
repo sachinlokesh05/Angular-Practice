@@ -1,0 +1,28 @@
+.text-data{
+  margin-left: 2%;
+}
+
+.input-text {
+  height: 51px;
+  width: 300px;
+  border: 1px solid #e7dcfe;
+  background-color: white;
+  font-size: 31px;
+  padding-left: 20px;
+}
+
+.select-field {
+  outline: none;
+  padding-left: 20px;
+  width: 324px;
+  height: 45px;
+  border: 1px solid #e7dcfe;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 2;
+  background-color: white;
+}
+
+ option:checked, option:hover {
+   color: black;
+   background: #ddd repeat ;
+ }

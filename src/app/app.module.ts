@@ -10,12 +10,12 @@ import { ConversionTableComponent } from './components/conversion-table/conversi
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './components/home/home.component';
 import { ConversionSelectionService } from './serviecs/conversion-selection.service';
-
+import {  ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpConnectionService } from './serviecs/http-service/http-connection.service';
+import { ConversionServiceService } from './serviecs/conversion-service/conversion-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,12 +30,14 @@ import { ConversionSelectionService } from './serviecs/conversion-selection.serv
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
-    FormsModule,
+    MatSelectModule,
+    // FormGroup,
     ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
+    FormsModule,
+    HttpClientModule,
+    // FormBuilder,
   ],
-  providers: [ConversionSelectionService, ],
+  providers: [ConversionSelectionService, HttpConnectionService,ConversionServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

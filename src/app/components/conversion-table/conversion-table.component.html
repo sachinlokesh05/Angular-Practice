@@ -1,12 +1,49 @@
-<form>
-  <h4>mat-select</h4>
-  <mat-form-field >
-    <mat-label>Favorite food</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="food">
-      <mat-option *ngFor="let food of foods" [value]="food.id">
-        {{food.viewValue}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-  <p> Selected food: {{selectedValue}} </p>
-</form>
+<div
+  class="conversion-main"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  fxLayout.xs='column'
+  fxLayoutGap="10px"
+>
+  <div fxLayout="column" class="from-main">
+    <p class="text-data">FROM</p>
+    <input
+      type="text"
+      [value]="boxValue === 'boxOne' ? valueOfInitialUnit : finalResult"
+      (keyup)="conversion($event.target.value, 'boxOne')"
+      class="input-text"
+    />
+    <select
+      matNativeControl
+      required
+      class="select-field"
+      (click)="firstSubUnit($event)"
+    >
+      <option *ngFor="let subUnits of subUnits">
+        {{subUnits}}
+      </option>
+    </select>
+  </div>
+  <div fxLayout="column" class="to-main">
+    <p class="text-data">TO</p>
+    <input
+      type="text"
+      [value]="boxValue === 'boxOne' ? finalResult : valueOfInitialUnit"
+      (keyup)="conversion($event.target.value, 'boxTwo')"
+      class="input-text"
+    />
+    <select
+      matNativeControl
+      required
+      class="select-field"
+      (click)="secondSubUnit($event)"
+    >
+      <option
+        *ngFor="let subUnits of subUnits; let arrayIndex = index"
+        [selected]="arrayIndex == 1"
+      >
+        {{subUnits}}
+      </option>
+    </select>
+  </div>
+</div>

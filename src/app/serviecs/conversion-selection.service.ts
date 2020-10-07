@@ -6,13 +6,12 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ConversionSelectionService {
 
-  private messageSource = new BehaviorSubject('default message');
+  private messageSource = new BehaviorSubject('temprature');
   currentMessage = this.messageSource.asObservable();
   constructor() { }
 
   // tslint:disable-next-line:typedef
   changeMessage(message: string) {
-    this.messageSource.next(message)
+    return this.messageSource.next(message);
   }
-
 }
